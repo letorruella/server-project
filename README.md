@@ -23,9 +23,9 @@ Apache2
 Ntp
 
 ## Configurations
-  *UFW allows port 123, 80 and 2200
-  *ssh port is serving on 2200 rather than 22
-  *Aditional User 'catalog' used for PSQL 'catalog' database
+  * UFW allows port 123, 80 and 2200
+  * ssh port is serving on 2200 rather than 22
+  * Aditional User 'catalog' used for PSQL 'catalog' database
 
 
 
