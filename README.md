@@ -16,3 +16,18 @@ Inside the server is a PostgreSQL server and a flask application, you can previe
 The postgres server has a its own user name catalog I also created an extra user inside the server for this porpoises. Run `sudo -u catalog psql`  to access the psql shell as catalog user.
 
 
+## Software Use
+PostgreSQL
+Python 
+Apache2 
+Ntp
+
+## Configurations
+UFW allows port 123, 80 and 2200
+ssh port is serving on 2200 rather than 22
+Aditional User 'catalog' used for PSQL 'catalog' database
+
+
+
+## Third party resources
+AWS Lightsail
