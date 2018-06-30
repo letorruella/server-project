@@ -23,10 +23,12 @@ The Postgres database has a its own user name catalog, it was created to do CRUD
 * NTP
 
 ## Configurations
-  * UFW allows port 123, 80 and 2200
-  * ssh port is serving on 2200 rather than 22
-  * Additional User 'catalog' used for PSQL 'catalog' database
-
+  * The UFW is enable allowing only ports 2200, 80, 123
+  * Custom shell command `sudo bash update.sh` that updates and upgrade which is shorter than writing `sudo apt-get...` yada yada
+  * SSH port is open only 2200 and  `PermitRootLogin` is set to `no`
+  * Added the ssh key to the sshd_config
+  * PSQL  has user 'catalog' database for CRUD commands
+  * Created a user name `grader` that has `sudo` priveldges and can change settings in the system and  `catalog`. Catalog is to handle CRUD commands from the applications this user does not have `Sudo` priviledges 
 
 
 ## Third party resources
